@@ -1,13 +1,17 @@
 
+import Banner from './components/Banner';
+import Nav from './components/Nav';
 
 function App() {
 
 
   return (
     <>
-      <h2>Assignment 5</h2>
+      <Nav />
+      <Banner />
+
     </>
-  )
+  );
 }
 
 export default App

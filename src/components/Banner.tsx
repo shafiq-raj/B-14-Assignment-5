@@ -1,0 +1,28 @@
+import React from "react";
+
+const Banner = () => {
+  return (
+    <div className="mx-auto max-w-5xl my-24">
+      <h1 className="font-inter text-5xl font-bold leading-tight ">
+        Build Your Ideal
+        <br />
+        <span className="bg-gradient-to-r from-red-500 to-blue-500 bg-clip-text text-transparent">
+          Development Stack
+        </span>
+      </h1>
+      <div>
+        <p className="font-plus jakarta-sans text-slate-600">
+          Explore frontend, backend, database, and tooling options,<br /> compare them
+          side by side, and put together the stack that fits your <br /> next project.
+        </p>
+      </div>
+      <div className="gap-3">
+        <button className="font-inter my-4 rounded-lg bg-gradient-to-r from-orange-400 to-red-500 px-5 py-2 text-white">Explore Technologies</button>
+        <button className="font-inter my-4 rounded-lg text-black border border-slate-400 px-12 py-2 ml-3">Learn More</button>
+       
+      </div>
+    </div>
+  );
+};
+
+export default Banner;
