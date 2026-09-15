@@ -1,102 +1,83 @@
 [
   {
-    "id": 1,
     "name": "React",
     "category": "Frontend",
-    "description": "A JavaScript library for building interactive and reusable user interfaces.",
-    "icon": "https://cdn.jsdelivr.net/npm/@dev.icons/core@latest/export-files/icons/react.svg",
-    "rating": 4.8,
+    "description": "A declarative, component-based JavaScript library for building modern user interfaces.",
+    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZoHXu9r19UIOR3pcOGGZnRQbaWkpMV3Cn9X38zIkUyg&s=10",
+    "rating": 4.9,
     "difficulty": "Beginner-friendly",
     "badge": "Popular"
   },
   {
-    "id": 2,
     "name": "Node.js",
     "category": "Backend",
-    "description": "A JavaScript runtime used to build fast and scalable backend applications.",
-    "icon": "https://cdn.jsdelivr.net/npm/@dev.icons/core@latest/export-files/icons/nodejs.svg",
-    "rating": 4.7,
+    "description": "An asynchronous event-driven JavaScript runtime built on Chrome's V8 engine.",
+    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSx_deq826l1V66HDHERBRCNR6UtOIo0Vyy5fQ0QBkNg&s=10",
+    "rating": 4.8,
     "difficulty": "Intermediate",
-    "badge": "Fast"
+    "badge": "Standard"
   },
   {
-    "id": 3,
-    "name": "MongoDB",
-    "category": "database",
-    "description": "A NoSQL database designed for flexible and scalable data storage.",
-    "icon": "https://cdn.jsdelivr.net/npm/@dev.icons/core@latest/export-files/icons/mongodb.svg",
-    "rating": 4.6,
+    "name": "Vue.js",
+    "category": "Frontend",
+    "description": "An approachable, performant, and versatile framework for building web user interfaces.",
+    "icon": "https://avatars.githubusercontent.com/u/6128107?s=200&v=4",
+    "rating": 4.8,
     "difficulty": "Beginner-friendly",
-    "badge": "Popular"
+    "badge": "Versatile"
   },
   {
-    "id": 4,
     "name": "JavaScript",
     "category": "language",
-    "description": "A programming language used to create dynamic and interactive web applications.",
-    "icon": "https://cdn.jsdelivr.net/npm/@dev.icons/core@latest/export-files/icons/javascript.svg",
+    "description": "The versatile, ubiquitous scripting language powering dynamic behavior across the web.",
+    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtW41-f13wcfMVqPEl9X70IAV9fvf7oYE6svE8e4xIEA&s=10",
     "rating": 4.9,
     "difficulty": "Beginner-friendly",
-    "badge": "Essential"
+    "badge": "Ubiquitous"
   },
   {
-    "id": 5,
     "name": "Tailwind CSS",
     "category": "styling",
-    "description": "A utility-first CSS framework for creating modern and responsive interfaces.",
-    "icon": "https://cdn.jsdelivr.net/npm/@dev.icons/core@latest/export-files/icons/tailwindcss.svg",
-    "rating": 4.8,
+    "description": "A utility-first CSS framework packed with classes that can be composed to build custom UI.",
+    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvpekgKrVcASXyI6uGxHT-VVfqVUNRMcTdGvk1mrdA3A&s=10",
+    "rating": 4.9,
     "difficulty": "Beginner-friendly",
+    "badge": "Modern"
+  },
+  {
+    "name": "Svelte",
+    "category": "Frontend",
+    "description": "Cybernetically enhanced web apps with compile-time reactivity and zero virtual DOM overhead.",
+    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThfVMYXBGlDCf4b9lF9y50ejrHcsO6N0hKnVQsL7c7vw&s=10",
+    "rating": 4.8,
+    "difficulty": "Intermediate",
     "badge": "Fast"
   },
   {
-    "id": 6,
-    "name": "Git",
-    "category": "devOps",
-    "description": "A version control system used to track and manage changes in code.",
-    "icon": "https://cdn.jsdelivr.net/npm/@dev.icons/core@latest/export-files/icons/git.svg",
+    "name": "Next.js",
+    "category": "Frontend",
+    "description": "The React framework for full-stack web applications with hybrid static & server rendering.",
+    "icon": "https://www.drupal.org/files/project-images/nextjs-icon-dark-background.png",
     "rating": 4.9,
-    "difficulty": "Beginner-friendly",
-    "badge": "Essential"
+    "difficulty": "Intermediate",
+    "badge": "SSR/Edge"
   },
   {
-    "id": 7,
-    "name": "Docker",
-    "category": "devOps",
-    "description": "A platform for building, running, and deploying applications in containers.",
-    "icon": "https://cdn.jsdelivr.net/npm/@dev.icons/core@latest/export-files/icons/docker.svg",
-    "rating": 4.7,
-    "difficulty": "Advanced",
-    "badge": "Popular"
-  },
-  {
-    "id": 8,
     "name": "TypeScript",
     "category": "language",
-    "description": "A strongly typed programming language built on top of JavaScript.",
-    "icon": "https://cdn.jsdelivr.net/npm/@dev.icons/core@latest/export-files/icons/typescript.svg",
-    "rating": 4.8,
-    "difficulty": "Intermediate",
-    "badge": "Popular"
-  },
-  {
-    "id": 9,
-    "name": "PostgreSQL",
-    "category": "database",
-    "description": "A powerful open-source relational database system.",
-    "icon": "https://cdn.jsdelivr.net/npm/@dev.icons/core@latest/export-files/icons/postgresql.svg",
-    "rating": 4.8,
-    "difficulty": "Intermediate",
-    "badge": "Essential"
-  },
-  {
-    "id": 10,
-    "name": "VS Code",
-    "category": "tools",
-    "description": "A lightweight and powerful source code editor for modern development.",
-    "icon": "https://cdn.jsdelivr.net/npm/@dev.icons/core@latest/export-files/icons/visual-studio-code.svg",
+    "description": "A strongly typed programming language that builds on JavaScript for robust tooling.",
+    "icon": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Typescript.svg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original",
     "rating": 4.9,
-    "difficulty": "Beginner-friendly",
-    "badge": "Essential"
+    "difficulty": "Intermediate",
+    "badge": "Essentinal"
+  },
+  {
+    "name": "Java",
+    "category": "language",
+    "description": "A secure, object-oriented programming language designed for portability and scale.",
+    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIyMSGPdUDDP02sVQXGVAwsrzwWEn7LVhc0XLlVxNXoBdVfwAajqB1VSPY&s=10",
+    "rating": 4.6,
+    "difficulty": "Intermediate",
+    "badge": "Robust"
   }
 ]
