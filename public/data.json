@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "name": "React",
+    "category": "Frontend",
+    "description": "A JavaScript library for building interactive and reusable user interfaces.",
+    "icon": "https://cdn.jsdelivr.net/npm/@dev.icons/core@latest/export-files/icons/react.svg",
+    "rating": 4.8,
+    "difficulty": "Beginner-friendly",
+    "badge": "Popular"
+  },
+  {
+    "id": 2,
+    "name": "Node.js",
+    "category": "Backend",
+    "description": "A JavaScript runtime used to build fast and scalable backend applications.",
+    "icon": "https://cdn.jsdelivr.net/npm/@dev.icons/core@latest/export-files/icons/nodejs.svg",
+    "rating": 4.7,
+    "difficulty": "Intermediate",
+    "badge": "Fast"
+  },
+  {
+    "id": 3,
+    "name": "MongoDB",
+    "category": "database",
+    "description": "A NoSQL database designed for flexible and scalable data storage.",
+    "icon": "https://cdn.jsdelivr.net/npm/@dev.icons/core@latest/export-files/icons/mongodb.svg",
+    "rating": 4.6,
+    "difficulty": "Beginner-friendly",
+    "badge": "Popular"
+  },
+  {
+    "id": 4,
+    "name": "JavaScript",
+    "category": "language",
+    "description": "A programming language used to create dynamic and interactive web applications.",
+    "icon": "https://cdn.jsdelivr.net/npm/@dev.icons/core@latest/export-files/icons/javascript.svg",
+    "rating": 4.9,
+    "difficulty": "Beginner-friendly",
+    "badge": "Essential"
+  },
+  {
+    "id": 5,
+    "name": "Tailwind CSS",
+    "category": "styling",
+    "description": "A utility-first CSS framework for creating modern and responsive interfaces.",
+    "icon": "https://cdn.jsdelivr.net/npm/@dev.icons/core@latest/export-files/icons/tailwindcss.svg",
+    "rating": 4.8,
+    "difficulty": "Beginner-friendly",
+    "badge": "Fast"
+  },
+  {
+    "id": 6,
+    "name": "Git",
+    "category": "devOps",
+    "description": "A version control system used to track and manage changes in code.",
+    "icon": "https://cdn.jsdelivr.net/npm/@dev.icons/core@latest/export-files/icons/git.svg",
+    "rating": 4.9,
+    "difficulty": "Beginner-friendly",
+    "badge": "Essential"
+  },
+  {
+    "id": 7,
+    "name": "Docker",
+    "category": "devOps",
+    "description": "A platform for building, running, and deploying applications in containers.",
+    "icon": "https://cdn.jsdelivr.net/npm/@dev.icons/core@latest/export-files/icons/docker.svg",
+    "rating": 4.7,
+    "difficulty": "Advanced",
+    "badge": "Popular"
+  },
+  {
+    "id": 8,
+    "name": "TypeScript",
+    "category": "language",
+    "description": "A strongly typed programming language built on top of JavaScript.",
+    "icon": "https://cdn.jsdelivr.net/npm/@dev.icons/core@latest/export-files/icons/typescript.svg",
+    "rating": 4.8,
+    "difficulty": "Intermediate",
+    "badge": "Popular"
+  },
+  {
+    "id": 9,
+    "name": "PostgreSQL",
+    "category": "database",
+    "description": "A powerful open-source relational database system.",
+    "icon": "https://cdn.jsdelivr.net/npm/@dev.icons/core@latest/export-files/icons/postgresql.svg",
+    "rating": 4.8,
+    "difficulty": "Intermediate",
+    "badge": "Essential"
+  },
+  {
+    "id": 10,
+    "name": "VS Code",
+    "category": "tools",
+    "description": "A lightweight and powerful source code editor for modern development.",
+    "icon": "https://cdn.jsdelivr.net/npm/@dev.icons/core@latest/export-files/icons/visual-studio-code.svg",
+    "rating": 4.9,
+    "difficulty": "Beginner-friendly",
+    "badge": "Essential"
+  }
+]
