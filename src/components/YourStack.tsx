@@ -1,4 +1,4 @@
-// import { X } from "lucide-react";
+
 import { IoClose } from "react-icons/io5";
 import type { Technology } from "./technologies/AvailableTechnologies";
 
