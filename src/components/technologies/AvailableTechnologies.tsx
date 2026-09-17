@@ -1,4 +1,5 @@
-import { LiaStarSolid } from "react-icons/lia";
+import toast from "react-hot-toast";
+import { FaStar, FaCheck } from "react-icons/fa";
 
 export interface Technology {
   id: number;
@@ -13,88 +14,108 @@ export interface Technology {
 
 interface AvailableTechnologiesProps {
   technologies: Technology[];
+  selectedTechnologies: Technology[];
+  setSelectedTechnologies: React.Dispatch<
+    React.SetStateAction<Technology[]>
+  >;
 }
 
 const AvailableTechnologies = ({
   technologies,
+  selectedTechnologies,
+  setSelectedTechnologies,
 }: AvailableTechnologiesProps) => {
+  const handleAddToStack = (technology: Technology) => {
+    const alreadyExists = selectedTechnologies.some(
+      (item) => item.id === technology.id
+    );
+
+    if (alreadyExists) return;
+
+    setSelectedTechnologies((prev) => [...prev, technology]);
+    toast.success(`${technology.name} added to your stack!`);
+  };
+
   return (
-    <div className="mx-auto max-w-6xl px-4 py-8">
-      <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-        {technologies.map((technology) => (
+    <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
+      {technologies.map((technology) => {
+        const isSelected = selectedTechnologies.some(
+          (item) => item.id === technology.id
+        );
+
+        return (
           <div
             key={technology.id}
-            className="card w-full bg-base-100 border border-base-200 shadow-sm
-                       transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+            className={`flex flex-col justify-between rounded-[24px] border p-6 shadow-sm transition-colors ${
+              isSelected
+                ? "border-red-500"
+                : "border-gray-100 bg-white"
+            }`}
           >
-            {/* Top Section */}
-            <div className="flex items-center justify-between px-6 pt-6">
-              {/* Technology Icon */}
-              <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-base-200">
+            <div>
+              {/* Header: Icon & Badge */}
+              <div className="flex items-center justify-between">
                 <img
                   src={technology.icon}
                   alt={technology.name}
-                  className="h-9 w-9 object-contain"
+                  className="h-10 w-10 object-contain"
                 />
+                <span className="rounded-full bg-sky-50 px-3 py-1 text-xs font-medium text-sky-500">
+                  {technology.badge}
+                </span>
               </div>
 
-              {/* Badge */}
-              <span className="rounded-full border border-blue-200 bg-blue-50 px-3 py-1 text-xs font-semibold text-blue-600">
-                {technology.badge}
-              </span>
-            </div>
-
-            {/* Card Body */}
-            <div className="card-body">
-
-              {/* Technology Name */}
-              <h2 className="text-2xl font-bold tracking-tight">
+              {/* Title & Description */}
+              <h2 className="mt-5 text-xl font-bold text-gray-900">
                 {technology.name}
               </h2>
 
-              {/* Description */}
-              <p className="mt-2 line-clamp-2 text-sm leading-6 text-gray-500">
+              <p className="mt-2 text-sm leading-relaxed text-gray-500">
                 {technology.description}
               </p>
+            </div>
 
-              {/* Technology Info */}
-              <div className="mt-5 grid grid-cols-3 items-center border-y border-base-200 py-4">
+            <div>
+              {/* Metadata Row */}
+              <div className="mt-6 flex items-center justify-between text-xs font-medium text-gray-500">
+                <span className="rounded-md bg-gray-50 px-2.5 py-1.5 text-gray-600">
+                  {technology.category}
+                </span>
 
-                {/* Category */}
-                <div className="text-left">
-                  <span className="rounded-full bg-base-200 px-3 py-1.5 text-xs font-semibold">
-                    {technology.category}
-                  </span>
-                </div>
+                <span>{technology.difficulty}</span>
 
-                {/* Difficulty */}
-                <div className="text-center">
-                  <span className="text-xs font-semibold text-purple-500">
-                    {technology.difficulty}
-                  </span>
-                </div>
-
-                {/* Rating */}
-                <div className="flex items-center justify-end gap-0.5">
-                  <LiaStarSolid className="shrink-0 text-xl text-yellow-400" />
-                  <span className="text-sm font-bold">
+                <div className="flex items-center gap-1.5">
+                  <FaStar className="text-amber-400 text-sm" />
+                  <span className="font-semibold text-gray-900 text-sm">
                     {technology.rating}
                   </span>
                 </div>
               </div>
 
-              {/* Add Button */}
+              {/* Action Button */}
               <button
-                className="mt-2 w-full rounded-xl bg-black py-3 text-sm font-semibold
-                           text-white transition-all duration-300
-                           hover:bg-gray-800 active:scale-[0.98]"
+                disabled={isSelected}
+                onClick={() => handleAddToStack(technology)}
+                className={`mt-6 flex w-full items-center justify-center gap-2 rounded-xl py-3 text-sm font-medium transition ${
+                  isSelected
+                    ? "cursor-not-allowed bg-gray-200 text-red-500"
+                    : "bg-[#0b0f19] text-white hover:bg-gray-800"
+                }`}
               >
-                Add To Stack
+                {isSelected ? (
+                  <>
+                    <FaCheck className="text-xs" />
+                    <span>Added to Stack</span>
+                    
+                  </>
+                ) : (
+                  "Add to Stack"
+                )}
               </button>
             </div>
           </div>
-        ))}
-      </div>
+        );
+      })}
     </div>
   );
 };

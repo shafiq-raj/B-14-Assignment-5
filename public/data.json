@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "name": "React",
     "category": "Frontend",
     "description": "A declarative, component-based JavaScript library for building modern user interfaces.",
@@ -9,6 +10,7 @@
     "badge": "Popular"
   },
   {
+    "id": 2,
     "name": "Node.js",
     "category": "Backend",
     "description": "An asynchronous event-driven JavaScript runtime built on Chrome's V8 engine.",
@@ -18,6 +20,7 @@
     "badge": "Standard"
   },
   {
+    "id": 3,
     "name": "Vue.js",
     "category": "Frontend",
     "description": "An approachable, performant, and versatile framework for building web user interfaces.",
@@ -27,6 +30,7 @@
     "badge": "Versatile"
   },
   {
+    "id": 4,
     "name": "JavaScript",
     "category": "language",
     "description": "The versatile, ubiquitous scripting language powering dynamic behavior across the web.",
@@ -36,6 +40,7 @@
     "badge": "Ubiquitous"
   },
   {
+    "id": 5,
     "name": "Tailwind CSS",
     "category": "styling",
     "description": "A utility-first CSS framework packed with classes that can be composed to build custom UI.",
@@ -45,6 +50,7 @@
     "badge": "Modern"
   },
   {
+    "id": 6,
     "name": "Svelte",
     "category": "Frontend",
     "description": "Cybernetically enhanced web apps with compile-time reactivity and zero virtual DOM overhead.",
@@ -54,6 +60,7 @@
     "badge": "Fast"
   },
   {
+    "id": 7,
     "name": "Next.js",
     "category": "Frontend",
     "description": "The React framework for full-stack web applications with hybrid static & server rendering.",
@@ -63,6 +70,7 @@
     "badge": "SSR/Edge"
   },
   {
+    "id": 8,
     "name": "TypeScript",
     "category": "language",
     "description": "A strongly typed programming language that builds on JavaScript for robust tooling.",
@@ -72,6 +80,7 @@
     "badge": "Essentinal"
   },
   {
+    "id": 9,
     "name": "Java",
     "category": "language",
     "description": "A secure, object-oriented programming language designed for portability and scale.",

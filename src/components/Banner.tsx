@@ -20,8 +20,8 @@ const Banner = () => {
         </p>
      
       
-        <button className="font-inter my-4 rounded-lg bg-gradient-to-r from-orange-400 to-red-500 px-5 py-2 text-white">Explore Technologies</button>
-        <button className="font-inter my-4 rounded-lg text-black border border-slate-400 px-12 py-2 ml-3">Learn More</button>
+        <button className="font-inter my-4 rounded-lg bg-gradient-to-r from-orange-400 to-red-500 px-5 py-2 text-white"><a href="#">Explore Technologies</a></button>
+        <button className="font-inter my-4 rounded-lg text-black border border-slate-400 px-12 py-2 ml-3"><a href="#">Learn More</a></button>
        </div>
     
       <div>

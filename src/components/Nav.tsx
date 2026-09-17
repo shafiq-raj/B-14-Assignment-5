@@ -8,11 +8,11 @@ const Nav = () => {
         <img src={logo} alt="" className="h-[25px] w-[100px]"/>
       
       <ul className="flex items-center gap-4">
-        <li className="text-red-400">Home</li>
-        <li>Technologies</li>
-        <li>Projects</li>
-        <li>About</li>
-        <li>Contact</li>
+        <li className="text-red-400"><a href="#">Home</a></li>
+        <li><a href="#">Technologies</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
       <div>
           <button className="px-5 py-2 rounded-lg border-0 outline-none cursor-pointer">
